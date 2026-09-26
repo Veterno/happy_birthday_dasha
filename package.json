@@ -20,5 +20,12 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest"
+  },
+  "scripts": {
+  "dev": "vite",
+  "build": "tsc && vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
   }
+
 }
